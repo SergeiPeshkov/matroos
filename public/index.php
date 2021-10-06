@@ -1,6 +1,5 @@
 <?php
 
-
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 
@@ -54,4 +53,3 @@ $response = tap($kernel->handle(
 ))->send();
 
 $kernel->terminate($request, $response);
-
